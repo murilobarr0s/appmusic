@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CadMusicaActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        android:text="Cadastro de Músicas"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="189dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFBFB"
+        android:textColorLink="#F6F0F0"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spGenero"
+        android:layout_width="179dp"
+        android:layout_height="41dp"
+        android:background="#856B7078"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Gênero"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDuracao" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:text="Título"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/etAno"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFBFB"
+        android:textColorLink="#F6F0F0"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toEndOf="@+id/etTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:text="Ano"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:text="Duração"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/etAno" />
+
+    <EditText
+        android:id="@+id/etDuracao"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFBFB"
+        android:textColorLink="#F6F0F0"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toEndOf="@+id/etInterprete"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/etAno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:text="Intérprete"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
+
+    <EditText
+        android:id="@+id/etInterprete"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFBFB"
+        android:textColorLink="#F6F0F0"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        android:background="#DD13E22F"
+        android:drawableLeft="@drawable/ic_add_black_24dp"
+        android:text="Cadastrar Música"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInterprete" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="129dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FF7A0A"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:text="VOLTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toEndOf="@+id/btCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/etDuracao" />
+
+    <ListView
+        android:id="@+id/lvMusic"
+        android:layout_width="382dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="5dp"
+        android:fastScrollEnabled="true"
+        android:focusableInTouchMode="false"
+        android:longClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCadastrar" />
+
+    /*
+    android:id="@+id/lvMusicas"
+    android:layout_width="371dp"
+    android:layout_height="554dp"
+    android:layout_marginTop="20dp"
+    android:fastScrollEnabled="true"
+    android:longClickable="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.476"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtPesquisa"
+    */
+
+</androidx.constraintlayout.widget.ConstraintLayout>

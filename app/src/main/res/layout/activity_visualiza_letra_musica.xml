@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VisualizaLetraMusica" >
+
+    <TextView
+        android:id="@+id/tvMusica"
+        android:layout_width="330dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_music_note_black_24dp"
+        android:text='"Musica 1"'
+        android:textColor="#782C2C"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:text="Banda ABC"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMusica" />
+
+    <EditText
+        android:id="@+id/etres"
+        android:layout_width="329dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutor" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="#EA8160"
+        android:text="VOLTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etres" />
+</androidx.constraintlayout.widget.ConstraintLayout>
