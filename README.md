@@ -1,5 +1,5 @@
 # appmusic
-App desenvolvido em Java, com CRUD de músicas e gêneros e a possibilidade de gerar a letra da música cadastrada pelo usuário utilizando a API do Vagalume utilizando recursos de JSON para ler e retornar dados.
+App desenvolvido em Java - Android , com CRUD de músicas e gêneros e a possibilidade de gerar a letra da música cadastrada pelo usuário utilizando a API do Vagalume utilizando recursos de JSON para ler e retornar dados.
 
 TELA INICIAL DO APP
 ![img1 - inicial](https://user-images.githubusercontent.com/56418006/88291608-deb5b100-ccce-11ea-8280-3f38b3d7fc48.jpg)
